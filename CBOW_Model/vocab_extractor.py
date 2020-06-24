@@ -28,6 +28,8 @@ glove_path = 'glove.6B'
 printable = set(string.printable)
 
 def save_glove_vocab_to_pickle():
+    """Save glove embedding to pickle files.
+    """
     words = []
     vectors = []
     idx = 0
@@ -61,7 +63,10 @@ def save_glove_vocab_to_pickle():
 #     return new_words
 
 def read_data(file_path):
-
+    """Read files, remove words with length less than 2 and special characters.
+       Input: file path of the documents.
+       Output: cleaned list of words in sequence.
+    """
     tokenizer = RegexpTokenizer(r'\w+')
     text = codecs.open(file_path, 'r', encoding='utf-8', errors='ignore').read()
     valid_characters = string.printable
@@ -78,6 +83,10 @@ def read_data(file_path):
 
 
 def get_whole_text_as_List(filesFolder):
+    """Piece together all the text from multiple documents. 
+       Input: file path of the documents.
+       Output: full text in a list format
+    """
 
     fnames = os.listdir(filesFolder)
     complete_test_sentence = []
