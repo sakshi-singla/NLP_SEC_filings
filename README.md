@@ -2,7 +2,7 @@
 **Scope:** 10-K files for S&P 500 Companies from 2010-2019<br>
 **Goal:** To calibrate Glove embeddings on a financial corpus and see if we can produce something like Loughran-McDonald’s sentiment wordlists or expand it,
 so it could be used in the future for other possible purposes as well.<br>
-**Steps:**
+**Steps:**<br>
 1.> To achieve this, we cleaned all these 10-K filings through a dynamic pipeline to ingest various types of files.  <br>
 2.> Since a single 10-K document is usually a collection of different types of files like html, exhibits, XBRL-related, etc.,
 we also analyzed and visualized from the following perspectives: the component of the 10-K files (and its changes for 10 years),
