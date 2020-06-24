@@ -1,6 +1,6 @@
 # NLP_SEC_filings
 # SEC 10-K files parsing, embedding building and evaluation.
-## The scope for this project is 10-K files for S&P 500 Companies from 2010-2019. <br>
+**The scope for this project is 10-K files for S&P 500 Companies from 2010-2019.** <br>
 Our main goal is to calibrate Glove embeddings on a financial corpus and see if we can produce something like Loughran-McDonald’s sentiment wordlists or expand it,
 so it could be used in the future for other possible purposes as well.<br>
 To achieve this, we cleaned all these 10-K filings through a dynamic pipeline to ingest various types of files.  <br>
